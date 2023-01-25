@@ -18,3 +18,10 @@ const UserPage = () => {
     </React.Fragment>
   )
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  ReactDOM.render(
+    <UserPage />,
+    document.body.appendChild(document.createElement('div'))
+  )
+});

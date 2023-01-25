@@ -18,3 +18,10 @@ const Feed = () => {
     </React.Fragment>
   )
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  ReactDOM.render(
+    <Feed />,
+    document.body.appendChild(document.createElement('div'))
+  )
+});

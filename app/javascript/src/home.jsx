@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import Navbar from './Navbar';
 import Footer from './Footer';
 import './home.scss';
-import jQuery from 'jquery';
+import $ from 'jquery';
 import '../packs/requests';
 
 
