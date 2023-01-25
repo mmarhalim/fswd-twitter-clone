@@ -10,7 +10,7 @@ const Feed = () => {
       <div id="feed" className="container">
         <div className='row'>
           <div className='col-12 twitter-feed'>
-            <h1>User Feed</h1>
+            <h1>Twitter Feed</h1>
           </div>
         </div>
       </div>
