@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
-import { getTweets, postTweet, deleteTweet } from '../packs/requests';
-import Navbar from './Navbar';
-import { getCurrentUser, countUsersTweets } from '../packs/utils';
-import Footer from './Footer';
+import { getTweets, postTweet, deleteTweet } from './requests';
+import Navbar from './navbar';
+import { getCurrentUser, countUsersTweets } from './utils';
+import Footer from './footer';
 
 const Feed = () => {
 

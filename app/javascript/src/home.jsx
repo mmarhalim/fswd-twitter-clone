@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
-import { createUser, logInUser, authenticateUser } from '../packs/requests';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import { createUser, logInUser, authenticateUser } from './requests';
+import Navbar from './navbar';
+import Footer from './footer';
 import './home.scss';
 
 
@@ -51,13 +52,12 @@ const Home = () => {
   //  go to feed if user is logged in
 
   useEffect(() => {
-    authenticateUser(function (response) {
-      if (response.authenticated == true) {
-        window.location.assign('/feed');
-      }
-    })
+    // authenticateUser(function (response) {
+    //   if (response.authenticated == true) {
+    //     window.location.assign('/feed');
+    //   }
+    // })
   }, [])
-
 
   return (
     <React.Fragment>

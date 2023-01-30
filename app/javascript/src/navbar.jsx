@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { getCurrentUser } from "../packs/utils";
-import { logOutUser } from "../packs/requests";
+import React from 'react';
+import { useEffect, useState } from 'react';
+import { getCurrentUser } from "./utils";
+import { logOutUser } from "./requests";
 
 const Navbar = () => {
 
