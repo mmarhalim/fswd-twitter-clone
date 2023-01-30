@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import { createUser, logInUser, authenticateUser } from '../packs/requests';
-import Navbar from './Navbar';
-import Footer from './Footer';
-import './Home.scss';
+import Navbar from './navbar';
+import Footer from './footer';
+import './home.scss';
 
 
 const Home = () => {

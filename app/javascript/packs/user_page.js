@@ -1,1 +1,1 @@
-import '../src/UserPage'
+import '../src/userpage'

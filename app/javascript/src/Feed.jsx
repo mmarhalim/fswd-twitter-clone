@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 import { getTweets, postTweet, deleteTweet } from '../packs/requests';
-import Navbar from './Navbar';
+import Navbar from './navbar';
 import { getCurrentUser, countUsersTweets } from '../packs/utils';
-import Footer from './Footer';
+import Footer from './footer';
 
 const Feed = () => {
 
