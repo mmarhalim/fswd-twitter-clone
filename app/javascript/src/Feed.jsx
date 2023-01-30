@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 import { getTweets, postTweet, deleteTweet } from './requests';
 import Navbar from './navbar';
