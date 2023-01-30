@@ -13,7 +13,7 @@ $.ajaxSetup({
 
 //___________________Create a User_____________________
 
-export var createUser = function (username, email, password, callback) {
+export function createUser(username, email, password, callback) {
   var request = {
     type: 'POST',
     url: 'api/users',
@@ -33,7 +33,7 @@ export var createUser = function (username, email, password, callback) {
 
 //___________Create Session (User Logs in)_____________
 
-export var logInUser = function (username, password, callback) {
+export function logInUser(username, password, callback) {
   var request = {
     type: 'POST',
     url: 'api/sessions',
@@ -52,7 +52,7 @@ export var logInUser = function (username, password, callback) {
 
 //___________Delete Session (User Logs Out)_____________
 
-export var logOutUser = function (callback) {
+export function logOutUser(callback) {
   var request = {
     type: 'DELETE',
     url: 'api/sessions',
@@ -65,7 +65,7 @@ export var logOutUser = function (callback) {
 
 //_____________Authenticate User________________
 
-export var authenticateUser = function (callback) {
+export function authenticateUser(callback) {
   var request = {
     type: 'GET',
     url: 'api/authenticated',
@@ -81,7 +81,7 @@ export var authenticateUser = function (callback) {
 
 //________________Get Tweets____________________
 
-export var getTweets = function (callback) {
+export function getTweets(callback) {
   var request = {
     type: 'GET',
     url: 'api/tweets',
@@ -94,7 +94,7 @@ export var getTweets = function (callback) {
 
 //______________Get Users Tweets__________________
 
-export var getUsersTweets = function (username, callback) {
+export function getUsersTweets(username, callback) {
   var request = {
     type: 'GET',
     url: '/api/users/' + username + '/tweets',
@@ -113,7 +113,7 @@ export var getUsersTweets = function (username, callback) {
 
 //_______________Post a Tweet___________________
 
-export var postTweet = function (content, photo, callback) {
+export function postTweet(content, photo, callback) {
   var formData = new FormData();
   if (content) {
     formData.append('tweet[message]', content);
@@ -138,7 +138,7 @@ export var postTweet = function (content, photo, callback) {
 
 //_______________Delete a Tweet__________________
 
-export var deleteTweet = function (id, callback) {
+export function deleteTweet(id, callback) {
   var request = {
     type: 'DELETE',
     url: 'api/tweets/' + id,
