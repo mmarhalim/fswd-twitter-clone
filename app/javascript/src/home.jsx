@@ -4,7 +4,7 @@ import $ from 'jquery';
 import { createUser, logInUser, authenticateUser } from '../packs/requests';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import './home.scss';
+import './Home.scss';
 
 
 const Home = () => {
@@ -51,13 +51,12 @@ const Home = () => {
   //  go to feed if user is logged in
 
   useEffect(() => {
-    authenticateUser(function (response) {
-      if (response.authenticated == true) {
-        window.location.assign('/feed');
-      }
-    })
+    // authenticateUser(function (response) {
+    //   if (response.authenticated == true) {
+    //     window.location.assign('/feed');
+    //   }
+    // })
   }, [])
-
 
   return (
     <React.Fragment>

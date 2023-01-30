@@ -7,9 +7,9 @@ export var getCurrentUser = function (callback) {
     if (response.authenticated == true) {
       callback(response);
     }
-    else if (response.authenticated == false) {
-      window.location.replace('/');
-    }
+    // else if (response.authenticated == false) {
+      // window.location.replace('/');
+    // }
   });
 };
 
