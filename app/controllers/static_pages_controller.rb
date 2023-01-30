@@ -6,8 +6,8 @@ class StaticPagesController < ApplicationController
     render 'feed'
   end
 
-  def user_page
-    render 'user_page'
+  def userpage
+    render 'userpage'
   end
 
 end
